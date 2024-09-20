@@ -5,9 +5,7 @@
    License URL: http://creativecommons.org/licenses/by/3.0/
    -->
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
+<html lang="en-us"><head>
   <title>2023 首爾四天三夜之旅</title>
   <!--meta tags -->
   <meta charset="UTF-8">
@@ -97,14 +95,19 @@ body {
  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+	
+	<link rel="stylesheet" href="./buttonstyle.css">
 </head>
 
-<body>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet"><body>
   <!-- //banner -->
   <div class="banner-left-side" id="home">
     <!-- header -->
     <div class="headder-top">
       <!-- nav -->
+
       <nav>
         <div id="logo">
           <h1>
@@ -120,7 +123,7 @@ body {
         <input type="checkbox" id="drop">
         <ul class="menu mt-2">
 			<li>
-            <a href="index.html"><h6><font color="black"><strong>回到主頁</strong></h6></font></a>
+            <a href="#home"><h6><font color="black"><strong>回到主頁</strong></h6></font></a>
           </li>
           <li>
             <a href="#about"><h6><font color="black"><strong>航班資訊</strong></font></h6></a>
@@ -2588,32 +2591,15 @@ body {
   </footer>
   <!--//footer-copy-right -->
 
-<script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
+<a id="button"></a>
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script><script  src="./script.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./buttonscript.js"></script>
 </body>
 
 </html>
