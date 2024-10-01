@@ -5,8 +5,13 @@
    License URL: http://creativecommons.org/licenses/by/3.0/
    -->
 <!DOCTYPE html>
-<html lang="en-us"><head>
+<html lang="en-us">
+	<head>
   <title>2023 首爾四天三夜之旅</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+	<link rel="stylesheet" href="./cardslider.css">
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,6 +85,8 @@ body {
       window.scrollTo(0, 1);
     }
   </script>
+		</head>
+	<head>
   <!--booststrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
   <!--//booststrap end-->
@@ -94,16 +101,20 @@ body {
   <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+		<link rel="stylesheet" href="./style.css">
 	
 	<link rel="stylesheet" href="./buttonscript.css">
-	
-	<link rel="stylesheet" href="./cardsstyle.css">
+		
+		 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet"><body>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	<body>
   <!-- //banner -->
   <div class="banner-left-side" id="home">
     <!-- header -->
@@ -300,7 +311,7 @@ body {
             <div class="ser-text-wthree mt-3">
              <h6>
               <strong>09/30 早上 아침</h6><P><h5>서울숲 首爾林</strong></h5>
-              <p class="mt-2"><font color="black">首爾林在 2005 年所開放提供給民眾可以休閒的休憩所。這裡是以文化藝術公園、生態林、自然體驗學習園地、濕地生態園，等四大主題公園所組合成的。文化藝術公園有羣馬銅像和廣大廣大草坪的家族廣場。生態林裡面是能讓野生動，植物可一起共生所打造的一個空間。</font></p>
+              <p class="mt-2"><font color="black">首爾林在 2005 年所開放提供給民眾可以休閒的休憩所。這裡以文化藝術公園、生態林、自然體驗學習園地、濕地生態園，等四大主題公園所組合成的。文化藝術公園有羣馬銅像和廣大廣大草坪的家族廣場。生態林裡面是能讓野生動，植物可一起共生所打造的一個空間。</font></p>
             </div>
           </div>
         </div>
@@ -385,355 +396,94 @@ body {
       <p><font color="black">去參觀的景點和用餐的餐廳的照片。有一張照片經同意使用。</font>
         </p>
       </div>
-      <div class="container">
-  <div class="card-slider">
-    <div class="col-lg-12">
-      <div class="card w-100">
-         <img src="images/koreanair.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>大韓航空 KE186</strong></h5>
-			<p class="card-text">大韓航空 KE186, 台灣桃園 - 首爾仁川</p>
+      <div class="slider owl-carousel">
+            <div class="card">
+                <div class="img">
+                    <img src="images/koreanair.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        대한항공 大韓航空 KE186
+                    </div>
+                    <p>
+                        台灣桃園國際機場飛往首爾仁川國際機場
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/koreanairfood1.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        大韓航空機上膳食
+                    </div>
+                    <p>
+                        韓式雞肉飯 bulgogi
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/koreanairfood2.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        大韓航空機上膳食
+                    </div>
+                    <p>
+                        韓式雞肉飯 bulgogi
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/aweixiao1.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">
+                         아미소 阿味笑
+                    </div>
+                    <p>
+                        韓國人最愛的傳統韓定食餐廳
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/aweixiao2.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        아미소 阿味笑
+                    </div>
+                    <p>
+                        韓國人最愛的傳統韓定食餐廳
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/aweixiao3.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        아미소 阿味笑
+                    </div>
+                    <p>
+                        阿味笑餐廳的菜單
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-12">
-      <div class="card">
-         <img src="images/koreanairfood1.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>大韓航空機上美食</strong></h5>
-			<p class="card-text">飛機上的韓式雞肉飯</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-12">
-      <div class="card w-100">
-         <img src="images/koreanairfood2.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>大韓航空上美食</strong></h5>
-			<p class="card-text">飛機上的韓式雞肉飯</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao1.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">明洞的韓定食餐廳</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao2.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">明洞的韓定食餐廳</p>
-        </div>
-      </div>
-    </div>
-			  
-	<div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao3.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">阿味笑的菜單</p>
-        </div>
-      </div>
-    </div>
-			  
-			  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao4.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">阿味笑的菜單</p>
-        </div>
-      </div>
-    </div>
-			  
-	<div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao5.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">阿味笑的菜單</p>
-        </div>
-      </div>
-    </div>
-			  
-	<div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao6.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">阿味笑的菜單</p>
-        </div>
-      </div>
-    </div>
-			  
-	<div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao7.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">阿味笑的菜單</p>
-        </div>
-      </div>
-    </div>
-			  
-			  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao8.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">石鍋拌飯</p>
-        </div>
-      </div>
-    </div>
-			  
-			  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao9.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">石鍋拌飯</p>
-        </div>
-      </div>
-    </div>
-			  
-	<div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao10.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">石鍋拌飯</p>
-        </div>
-      </div>
-    </div>
-			  
-			  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/aweixiao11.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>阿味笑 아미소</strong></h5>
-          <p class="card-text">石鍋拌飯</p>
-        </div>
-      </div>
-    </div>
-	  
-<div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/toyokoinn1.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>東橫 Inn 토요코인</strong></h5>
-          <p class="card-text">東大門的東橫 Inn, 2 號飯店</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/toyokoinn2.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>東橫 Inn 토요코인</strong></h5>
-          <p class="card-text">東大門的東橫 Inn, 2 號飯店</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/toyokoinn3.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>東橫 Inn 토요코인</strong></h5>
-          <p class="card-text">東大門的東橫 Inn, 2 號飯店</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/subway1.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>首爾地鐵</strong></h5>
-          <p class="card-text">搭首爾地鐵</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/subway2.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>首爾地鐵</strong></h5>
-          <p class="card-text">搭首爾地鐵</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark1.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark2.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark3.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark4.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark5.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark6.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark7.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark8.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark9.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark10.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark11.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark12.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark13.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark14.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark15.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-	  
-	  <div class="col-lg-12">
-      <div class="card w-100">
-        <img src="images/skypark16.jpg" alt="" class="img-fluid">
-        <div class="card-body">
-          <h5 class="card-title"><strong>天空公園 하늘공원</strong></h5>
-          <p class="card-text">位於首爾特別市麻浦區</p>
-        </div>
-      </div>
-    </div>
-			  
-  </div>
+        <script>
+            $(".slider").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000, //2000ms = 2s;
+                autoplayHoverPause: true,
+            });
+        </script>
+		  
 </div>
   </section>
   <!--//gallery -->
@@ -755,11 +505,13 @@ body {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'>
+	</script><script  src="./script.js"></script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./buttonscript.js"></script>
-
-<script  src="./cardscript.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script  src="./buttonscript.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script src='https://code.jquery.com/jquery-3.5.1.js'></script>
 </body>
 
 </html>
