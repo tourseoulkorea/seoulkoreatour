@@ -1,106 +1,122 @@
-:root {
-    --bg: #121212;
-    --card-bg: #1c1c1c;
-    --border: 1px solid #3c3c3a;
-    --shadow: 0px 10px 15px 0.3px rgba(0, 0, 0, 0.411);
-    --text: #ffffff;
-    --sub-text: #909090;
+/* Importing Google fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+.card-list .card-item {
+  list-style: none;
 }
 
-h1 {
-    padding: 20px;
-    color: var(--text);
-    font-size: 50px;
+.card-list .card-item .card-link {
+  display: block;
+  background: #fff;
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
 }
 
-.slider {
-    max-width: 1100px;
-    height: 427px;
-    display: flex;
-    background: transparent;
-}
-.slider .card {
-    flex: 1;
-    margin: 0 10px;
-    background: var(--card-bg);
-    border: var(--border);
-    border-radius: 16px;
-    overflow: hidden;
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
 }
 
-.slider .card .img {
-    height: 200px;
-    margin: 16px;
-    width: calc(100% - 32px);
-    border-radius: 10px;
-    transition: all 0.2s ease;
-    overflow: hidden;
-}
-.slider .card .img:hover {
-    filter: brightness(75%);
-}
-.slider .card .img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all 0.2s ease-in-out;
+.card-list .card-item .card-link:hover {
+  border-color: #5372F0;
 }
 
-.slider .card .img img:hover {
-    transform: scale(1.1); /* Scale up by 10% on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+.card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
-.slider .card .content {
-    padding: 10px 20px;
-}
-.card .content .title {
-    text-align: justify;
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--text);
-}
-.card .content .sub-title {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--sub-text);
-    line-height: 20px;
-    text-align: left;
+.card-list .card-link .badge {
+  color: #5372F0;
+  width: fit-content;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  font-weight: 500;
+  background: #DDE4FF;
+  margin: 16px 0 18px;
 }
 
-.card .content p {
-    text-align: justify;
-    margin: 10px 0;
-    color: var(--sub-text);
-    line-height: 1.5; /* Adjust the line height as needed */
-    max-height: 6em; /* 4 lines multiplied by the line height (adjust as needed) */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
+.card-list .card-link .badge-designer {
+  color: #B22485;
+  background: #F7DFF5;
 }
 
-.card .content button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    bottom: 10px;
-    right: 24px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: 0;
-    transition: bottom 0.2s ease-out, opacity 0.2s ease-out;
+.card-list .card-link .badge-marketer {
+  color: #B25A2B;
+  background: #FFE3D2;
 }
 
-.card:hover button {
-    bottom: 15px;
-    opacity: 1;
+.card-list .card-link .badge-gamer {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.card-list .card-link .badge-editor {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+  color: #000;
+  font-size: 1.19rem;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372F0;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #5372F0;
+  margin-top: -35px;
+}
+
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
 }
